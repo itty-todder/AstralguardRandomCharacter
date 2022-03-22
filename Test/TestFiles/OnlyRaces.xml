@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Generator>
+    <Races>
+	    <Race Name="TestRace">
+	        <Subrace Name="TestSubRace1"></Subrace>
+	        <Subrace Name="TestSubRace2"></Subrace>
+	        <Subrace Name="TestSubRace3"></Subrace>
+	        <Subrace Name="TestSubRace4"></Subrace>
+		</Race>
+    </Races>
+</Generator>
