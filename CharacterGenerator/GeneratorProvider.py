@@ -5,7 +5,7 @@ from CharacterGenerator.GeneratedItem import GeneratedItem
 
 RACES_XML_NODE = "Races"
 RACE_XML_NODE = "Race"
-
+SUB_RACE_XML_NODE = "Subrace"
 
 class GeneratorProvider:
 
@@ -22,4 +22,10 @@ class GeneratorProvider:
         self.races = []
         #TODO: Prettify(select only value)
         for race in races_nodes:
-            self.races.append(GeneratedItem(race.get("Name")))
+            sub_races_nodes = race.findall(SUB_RACE_XML_NODE)
+            sub_races = []
+            if sub_races_nodes is not None:
+                for sub_race in sub_races_nodes:
+                    sub_races.append(GeneratedItem(sub_race.get("Name")))
+            self.races.append(GeneratedItem(race.get("Name"), sub_races))
+
