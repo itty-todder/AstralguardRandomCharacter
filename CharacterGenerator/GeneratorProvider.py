@@ -21,30 +21,26 @@ class GeneratorProvider:
         self.__set_races(generator_xml_file_root)
         self.__set_classes(generator_xml_file_root)
 
-#TODO: This is duplicate
     def __set_races(self, generator_xml_file_root):
         races_root_node = generator_xml_file_root.find(RACES_XML_NODE)
-        if races_root_node is None:
-            print("Races node does not exist.")
-            return
-        races_nodes = races_root_node.findall(RACE_XML_NODE)
-        self.races = []
-        for race in races_nodes:
-            generated_race = self.__generate_item_from_xml_node(race, SUB_RACE_XML_NODE)
-
-            self.races.append(generated_race)
+        self.races = GeneratorProvider.__get_generated_items(races_root_node, RACE_XML_NODE, RACES_XML_NODE)
 
     def __set_classes(self, generator_xml_file_root):
-        races_root_node = generator_xml_file_root.find(CLASSES_XML_NODE)
-        if races_root_node is None:
-            print("Classes node does not exist.")
-            return
-        races_nodes = races_root_node.findall(CLASS_XML_NODE)
-        self.classes = []
-        for race in races_nodes:
-            generated_race = self.__generate_item_from_xml_node(race, SUB_CLASS_XML_NODE)
+        classes_root_node = generator_xml_file_root.find(CLASSES_XML_NODE)
+        self.classes = GeneratorProvider.__get_generated_items(classes_root_node, CLASS_XML_NODE, SUB_CLASS_XML_NODE)
 
-            self.classes.append(generated_race)
+    @staticmethod
+    def __get_generated_items(generated_root_xml_node, type_name, sub_type_name):
+        if generated_root_xml_node is None:
+            print("Races node does not exist.")
+            return []
+        nodes = generated_root_xml_node.findall(type_name)
+        items = []
+        for item_node in nodes:
+            generated_item = GeneratorProvider.__generate_item_from_xml_node(item_node, sub_type_name)
+            items.append(generated_item)
+
+        return items
 
     @staticmethod
     def __generate_item_from_xml_node(xml_node, sub_item_node):
