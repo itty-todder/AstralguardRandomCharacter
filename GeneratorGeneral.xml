@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<Generator>
+	<Classes>
+		<Class Name="Barbarian">
+			<Subclass Name="Berserker"></Subclass>
+			<Subclass Name="Totem Warrior"></Subclass>
+			<Subclass Name="Battlerager"></Subclass>
+			<Subclass Name="Ancestral Guardian"></Subclass>
+			<Subclass Name="Storm Herald"></Subclass>
+			<Subclass Name="Zealot"></Subclass>
+			<Subclass Name="Beast"></Subclass>
+			<Subclass Name="Wild Magic"></Subclass>
+		</Class>
+		<Class Name="Bard">
+			<Subclass Name="Lore"></Subclass>
+			<Subclass Name="Valor"></Subclass>
+			<Subclass Name="Glamour"></Subclass>
+			<Subclass Name="Swords"></Subclass>
+			<Subclass Name="Whispers"></Subclass>
+			<Subclass Name="Creation"></Subclass>
+			<Subclass Name="Spirits"></Subclass>
+			<Subclass Name="Eloquence"></Subclass>			
+		</Class>
+		<Class Name="Cleric">
+			<Subclass Name="Knowledge"></Subclass>
+			<Subclass Name="Life"></Subclass>
+			<Subclass Name="Light"></Subclass>
+			<Subclass Name="Nature"></Subclass>
+			<Subclass Name="Tempest"></Subclass>
+			<Subclass Name="Trickery"></Subclass>
+			<Subclass Name="War"></Subclass>
+			<Subclass Name="Arcana"></Subclass>
+			<Subclass Name="Forge"></Subclass>
+			<Subclass Name="Grave"></Subclass>
+			<Subclass Name="Death"></Subclass>
+			<Subclass Name="Order"></Subclass>			
+			<Subclass Name="Peace"></Subclass>
+			<Subclass Name="Twilight"></Subclass>
+		</Class>
+		<Class Name="Druid">
+			<Subclass Name="Land"></Subclass>
+			<Subclass Name="Moon"></Subclass>
+			<Subclass Name="Dreams"></Subclass>
+			<Subclass Name="Shepherd"></Subclass>
+			<Subclass Name="Spores"></Subclass>
+			<Subclass Name="Wildfire"></Subclass>
+			<Subclass Name="Stars"></Subclass>
+		</Class>
+		<Class Name="Fighter">
+			<Subclass Name="Battle Master"></Subclass>
+			<Subclass Name="Champion"></Subclass>
+			<Subclass Name="Eldritch Knight"></Subclass>
+			<Subclass Name="Purple Dragon Knight"></Subclass>
+			<Subclass Name="Arcane Archer"></Subclass>
+			<Subclass Name="Cavalier"></Subclass>
+			<Subclass Name="Samurai"></Subclass>
+			<Subclass Name="Echo Knight"></Subclass>
+			<Subclass Name="Psi Warrior"></Subclass>
+			<Subclass Name="Rune Knight"></Subclass>
+			<Subclass Name="Gunslinger"></Subclass>
+		</Class>
+		<Class Name="Monk">
+			<Subclass Name="Four Elements"></Subclass>
+			<Subclass Name="Open Hand"></Subclass>
+			<Subclass Name="Shadow"></Subclass>
+			<Subclass Name="Long Death"></Subclass>
+			<Subclass Name="Sun Soul"></Subclass>
+			<Subclass Name="Drunken Master"></Subclass>
+			<Subclass Name="Kensei"></Subclass>
+			<Subclass Name="Mercy"></Subclass>
+			<Subclass Name="Astral Self"></Subclass>
+			<Subclass Name="Ascended Dragon"></Subclass>
+		</Class>
+		<Class Name="Paladin">
+			<Subclass Name="Ancients"></Subclass>
+			<Subclass Name="Devotion"></Subclass>
+			<Subclass Name="Vengeance"></Subclass>
+			<Subclass Name="Crown"></Subclass>
+			<Subclass Name="Conquest"></Subclass>
+			<Subclass Name="Redemption"></Subclass>
+			<Subclass Name="Oathbreaker"></Subclass>
+			<Subclass Name="Glory"></Subclass>
+			<Subclass Name="Watchers"></Subclass>
+		</Class>
+		<Class Name="Ranger">
+			<Subclass Name="Beast Master"></Subclass>
+			<Subclass Name="Hunter"></Subclass>
+			<Subclass Name="Gloom Stalker"></Subclass>
+			<Subclass Name="Horizon Walker"></Subclass>
+			<Subclass Name="Monster Slayer"></Subclass>
+			<Subclass Name="Fey Wanderer"></Subclass>
+			<Subclass Name="Swarmkeeper"></Subclass>
+			<Subclass Name="Drakewarden"></Subclass>
+		</Class>
+		<Class Name="Rogue">
+			<Subclass Name="Assassin"></Subclass>
+			<Subclass Name="Arcane Trickster"></Subclass>
+			<Subclass Name="Thief"></Subclass>
+			<Subclass Name="Inquisitive"></Subclass>
+			<Subclass Name="Mastermind"></Subclass>
+			<Subclass Name="Scout"></Subclass>
+			<Subclass Name="Phantom"></Subclass>
+			<Subclass Name="Soulknife"></Subclass>
+			<Subclass Name="Swashbuckler"></Subclass>			
+		</Class>
+		<Class Name="Sorcerer">
+			<Subclass Name="Draconic Bloodline"></Subclass>
+			<Subclass Name="Wild Magic"></Subclass>
+			<Subclass Name="Storm"></Subclass>
+			<Subclass Name="Divine Soul"></Subclass>
+			<Subclass Name="Shadow"></Subclass>
+			<Subclass Name="Clockwork Soul"></Subclass>
+			<Subclass Name="Abberant Mind"></Subclass>
+			<Subclass Name="Primordial Bloodline"></Subclass>
+		</Class>
+		<Class Name="Warlock">
+			<Subclass Name="Archfey"></Subclass>
+			<Subclass Name="GOO"></Subclass>
+			<Subclass Name="Fiend"></Subclass>
+			<Subclass Name="Undying"></Subclass>
+			<Subclass Name="Celestial"></Subclass>
+			<Subclass Name="Hexblade"></Subclass>
+			<Subclass Name="The Fathomless"></Subclass>
+			<Subclass Name="The Undead"></Subclass>
+			<Subclass Name="Genie"></Subclass>
+		</Class>
+		<Class Name="Wizard">
+			<Subclass Name="Abjuration"></Subclass>
+			<Subclass Name="Conjuration"></Subclass>
+			<Subclass Name="Divination"></Subclass>
+			<Subclass Name="Enchantment"></Subclass>
+			<Subclass Name="Evocation"></Subclass>
+			<Subclass Name="Illusion"></Subclass>
+			<Subclass Name="Necromancy"></Subclass>
+			<Subclass Name="Transmutation"></Subclass>
+			<Subclass Name="Bladesinger"></Subclass>
+			<Subclass Name="War Magic"></Subclass>
+			<Subclass Name="Chronurgy"></Subclass>
+			<Subclass Name="Graviturgy"></Subclass>
+			<Subclass Name="Order of Scribes"></Subclass>
+		</Class>
+		<Class Name="Blood Hunter">
+			<Subclass Name="Ghostslayer"></Subclass>
+			<Subclass Name="Lycan"></Subclass>
+			<Subclass Name="Mutant"></Subclass>
+			<Subclass Name="Profane Soul"></Subclass>
+		</Class>
+		<Class Name="Artificer">
+			<Subclass Name="Alchemist"></Subclass>
+			<Subclass Name="Armorer"></Subclass>
+			<Subclass Name="Artillerist"></Subclass>
+			<Subclass Name="Battle Smith"></Subclass>
+		</Class>
+	</Classes>
+	<Races>
+	    <Race Name="Dragonborn">
+	        <Subrace Name="Chromatic Dragonborn"></Subrace>
+	        <Subrace Name="Draconblood"></Subrace>
+	        <Subrace Name="Ravenite"></Subrace>
+			<Subrace Name="Gem Dragonborn"></Subrace>
+			<Subrace Name="Metallic Dragonborn"></Subrace>
+	    </Race>
+	    <Race Name="Dwarf">
+	        <Subrace Name="Hill"></Subrace>
+	        <Subrace Name="Mountain"></Subrace>
+			<Subrace Name="Duergar"></Subrace>
+			<Subrace Name="Mark of Warding"></Subrace>
+	    </Race>
+	    <Race Name="Elf">
+	        <Subrace Name="Aereni High Elf"></Subrace>
+			<Subrace Name="Aereni Wood Elf"></Subrace>
+			<Subrace Name="Drow"></Subrace>
+			<Subrace Name="Eladrin"></Subrace>
+			<Subrace Name="High Elf"></Subrace>
+			<Subrace Name="Mark of Shadow"></Subrace>
+			<Subrace Name="Pallid"></Subrace>
+			<Subrace Name="Sea"></Subrace>
+			<Subrace Name="Shadar-Kai"></Subrace>
+			<Subrace Name="Valenar High Elf"></Subrace>
+			<Subrace Name="Valenar Wood Elf"></Subrace>
+			<Subrace Name="Wood Elf"></Subrace>
+	    </Race>
+	    <Race Name="Gnome">
+	        <Subrace Name="Forest"></Subrace>
+	        <Subrace Name="Rock"></Subrace>
+	        <Subrace Name="Deep"></Subrace>
+			<Subrace Name="Mark of Scribing"></Subrace>
+	    </Race>
+	    <Race Name="Half Elf">
+	        <Subrace Name="Regular"></Subrace>
+	        <Subrace Name="Aquatic"></Subrace>
+	        <Subrace Name="Drow"></Subrace>
+			<Subrace Name="High"></Subrace>
+			<Subrace Name="Mark of Detection"></Subrace>
+			<Subrace Name="Mark of Storm"></Subrace>
+			<Subrace Name="Wood"></Subrace>
+	    </Race>
+	    <Race Name="Half Orc">
+			<Subrace Name="Regular"></Subrace>
+			<Subrace Name="Mark of Finding"></Subrace>
+		</Race>
+	    <Race Name="Halfling">
+	        <Subrace Name="Lightfoot"></Subrace>
+	        <Subrace Name="Stout"></Subrace>
+	        <Subrace Name="Ghostwise"></Subrace>
+	        <Subrace Name="Lotusden"></Subrace>
+	    	<Subrace Name="Mark of Healing"></Subrace>
+	        <Subrace Name="Mark of Hospitality"></Subrace>
+		</Race>
+	    <Race Name="Human">
+	        <Subrace Name="Regular"></Subrace>
+	        <Subrace Name="Variant"></Subrace>
+	        <Subrace Name="Mark of Finding"></Subrace>
+	        <Subrace Name="Mark of Handling"></Subrace>
+	        <Subrace Name="Mark of Making"></Subrace>
+	        <Subrace Name="Mark of Passage"></Subrace>
+	        <Subrace Name="Mark of Sentinel"></Subrace>			
+	    </Race>
+	    <Race Name="Tiefling">
+	        <Subrace Name="Devils Tongue"></Subrace>
+	        <Subrace Name="Hellfire"></Subrace>
+	        <Subrace Name="Winged"></Subrace>
+	        <Subrace Name="Asmodeus"></Subrace>
+	        <Subrace Name="Baalzebul"></Subrace>
+	        <Subrace Name="Dispater"></Subrace>
+	        <Subrace Name="Fierna"></Subrace>
+	        <Subrace Name="Glasya"></Subrace>
+	        <Subrace Name="Levistus"></Subrace>
+	        <Subrace Name="Mammon"></Subrace>
+	        <Subrace Name="Mephistopheles"></Subrace>
+	        <Subrace Name="Zarial"></Subrace>
+			<Subrace Name="Regular"></Subrace>
+			<Subrace Name="Feral"></Subrace>			
+	    </Race>
+	    <Race Name="Githyanki"></Race>
+	    <Race Name="Githzerai"></Race>
+	    <Race Name="Aarakocra"></Race>
+	    <Race Name="Genasi">
+	        <Subrace Name="Air"></Subrace>
+	        <Subrace Name="Earth"></Subrace>
+	        <Subrace Name="Fire"></Subrace>
+	        <Subrace Name="Water"></Subrace>
+	    </Race>
+	    <Race Name="Aasimar">
+	        <Subrace Name="Fallen"></Subrace>
+	        <Subrace Name="Protector"></Subrace>
+	        <Subrace Name="Scourge"></Subrace>
+	        <Subrace Name="Variant"></Subrace>		
+	    </Race>
+	    <Race Name="Bugbear"></Race>
+	    <Race Name="Firbolg"></Race>
+	    <Race Name="Goblin"></Race>
+	    <Race Name="Goliath"></Race>
+	    <Race Name="Hobgoblin"></Race>
+	    <Race Name="Kenku"></Race>
+	    <Race Name="Kobold"></Race>
+	    <Race Name="Lizardfolk"></Race>
+	    <Race Name="Tabaxi"></Race>
+	    <Race Name="Triton"></Race>
+	    <Race Name="Orc"></Race>
+	    <Race Name="Yuan ti Pureblood"></Race>
+	    <Race Name="Loxodon"></Race>
+	    <Race Name="Minotaur"></Race>
+	    <Race Name="Simic Hybrid"></Race>
+	    <Race Name="Vedalken"></Race>
+	    <Race Name="Tortle"></Race>
+	    <Race Name="Grung"></Race>
+	    <Race Name="Kalashtar"></Race>
+	    <Race Name="Shifter">
+	        <Subrace Name="Beasthide"></Subrace>
+	        <Subrace Name="Longtooth"></Subrace>
+	        <Subrace Name="Swiftstride"></Subrace>
+	        <Subrace Name="Wildhunt"></Subrace>		
+		</Race>		
+	    <Race Name="Verdan"></Race>
+	    <Race Name="Leonin"></Race>
+	    <Race Name="Locathah"></Race>		
+	    <Race Name="Satyr"></Race>
+	    <Race Name="Changeling"></Race>
+		<Race Name="Dhampir"></Race>
+		<Race Name="Hexblood"></Race>
+		<Race Name="Reborn"></Race>
+		<Race Name="Fairy"></Race>
+		<Race Name="Harengon"></Race>		
+	    <Race Name="Warforged"></Race>
+		<Race Name="Owlin"></Race>
+	</Races>
+</Generator>
