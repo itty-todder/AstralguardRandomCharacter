@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Generator>
+	<Classes>
+		<Class Name="FirstClass">
+			<Subclass Name="TestSubClass1"></Subclass>
+			<Subclass Name="TestSubClass2"></Subclass>
+		</Class>
+        <Class Name="SecondClass">
+			<Subclass Name="TestSubClass3"></Subclass>
+			<Subclass Name="TestSubClass4"></Subclass>
+		</Class>
+    </Classes>
+    <Races>
+        <Race Name="FirstRace">
+	        <Subrace Name="TestSubRace1"></Subrace>
+	        <Subrace Name="TestSubRace2"></Subrace>
+		</Race>
+        <Race Name="SecondRace">
+	        <Subrace Name="TestSubRace3"></Subrace>
+	        <Subrace Name="TestSubRace4"></Subrace>
+		</Race>
+    </Races>
+</Generator>

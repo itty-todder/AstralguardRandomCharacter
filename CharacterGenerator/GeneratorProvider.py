@@ -22,6 +22,12 @@ class GeneratorProvider:
         self.__set_races(generator_xml_file_root)
         self.__set_classes(generator_xml_file_root)
 
+    def generate_astral_guard(self):
+        race, subrace = self.get_random_race()
+        generated_class, generated_subclass = self.get_random_class()
+
+        return (generated_class, generated_subclass), (race, subrace)
+
     def get_random_race(self):
         random_race = random.choice(self.__races)
         random_sub_race = None

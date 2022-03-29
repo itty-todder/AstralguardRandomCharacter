@@ -54,3 +54,26 @@ class TestGeneratorProvider(unittest.TestCase):
 
         sub_races_possibilities = classes_posibilities[genenrated_class.value]
         self.assertIn(generated_subclass.value, sub_races_possibilities, f"sub-Race is not in expected list of {genenrated_class}")
+
+    def test_generator_generate_astral_guard(self):
+        classes_posibilities = {
+            "FirstClass": ["TestSubClass1", "TestSubClass2"],
+            "SecondClass": ["TestSubClass3", "TestSubClass4"]
+        }
+        races_possibilties = {
+            "FirstRace": ["TestSubRace1", "TestSubRace2"],
+            "SecondRace": ["TestSubRace3", "TestSubRace4"]
+        }
+
+        generator = GeneratorProvider(".\\TestFiles\\FullFile.xml")
+        (generated_class, generated_subclass), (race, subrace) = generator.generate_astral_guard()
+
+        class_value = generated_class.value
+        race_value = race.value
+        self.assertIn(class_value, classes_posibilities)
+        self.assertIn(race_value, races_possibilties)
+
+        sub_class_posibilities = classes_posibilities[class_value]
+        sub_races_posibilities = races_possibilties[race_value]
+        self.assertIn(generated_subclass.value, sub_class_posibilities)
+        self.assertIn(subrace.value, sub_races_posibilities)
