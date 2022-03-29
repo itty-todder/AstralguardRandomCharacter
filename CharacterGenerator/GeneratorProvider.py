@@ -11,8 +11,8 @@ CLASSES_XML_NODE = "Classes"
 CLASS_XML_NODE = "Class"
 SUB_CLASS_XML_NODE = "Subclass"
 
-class GeneratorProvider:
 
+class GeneratorProvider:
     def __init__(self, generator_source):
         generator_source = Path(generator_source)
         if not generator_source.is_file():
@@ -21,13 +21,16 @@ class GeneratorProvider:
         self.__set_races(generator_xml_file_root)
         self.__set_classes(generator_xml_file_root)
 
+    def get_random_race(self):
+        pass
+
     def __set_races(self, generator_xml_file_root):
         races_root_node = generator_xml_file_root.find(RACES_XML_NODE)
-        self.races = GeneratorProvider.__get_generated_items(races_root_node, RACE_XML_NODE, RACES_XML_NODE)
+        self.__races = GeneratorProvider.__get_generated_items(races_root_node, RACE_XML_NODE, RACES_XML_NODE)
 
     def __set_classes(self, generator_xml_file_root):
         classes_root_node = generator_xml_file_root.find(CLASSES_XML_NODE)
-        self.classes = GeneratorProvider.__get_generated_items(classes_root_node, CLASS_XML_NODE, SUB_CLASS_XML_NODE)
+        self.__classes = GeneratorProvider.__get_generated_items(classes_root_node, CLASS_XML_NODE, SUB_CLASS_XML_NODE)
 
     @staticmethod
     def __get_generated_items(generated_root_xml_node, type_name, sub_type_name):
