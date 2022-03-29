@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Generator>
+    <Classes>
+	    <Class Name="FirstClass">
+	        <Subclass Name="clas1"></Subclass>
+	        <Subclass Name="SecondClass"></Subclass>
+		</Class>
+        <Class Name="Class2">
+		 	<Subclass Name="TheClasssub"></Subclass>
+	        <Subclass Name="ti"></Subclass>
+	        <Subclass Name="last"></Subclass>
+		</Class>
+    </Classes>
+</Generator>

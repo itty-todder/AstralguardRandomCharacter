@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import random
 
 from CharacterGenerator.GeneratedItem import GeneratedItem
 
@@ -22,11 +23,26 @@ class GeneratorProvider:
         self.__set_classes(generator_xml_file_root)
 
     def get_random_race(self):
-        pass
+        random_race = random.choice(self.__races)
+        random_sub_race = None
+
+        if random_race.subtypes:
+            random_sub_race = random.choice(random_race.subtypes)
+
+        return random_race, random_sub_race
+
+    def get_random_class(self):
+        random_class = random.choice(self.__classes)
+        random_sub_class = None
+
+        if random_class.subtypes:
+            random_sub_class = random.choice(random_class.subtypes)
+
+        return random_class, random_sub_class
 
     def __set_races(self, generator_xml_file_root):
         races_root_node = generator_xml_file_root.find(RACES_XML_NODE)
-        self.__races = GeneratorProvider.__get_generated_items(races_root_node, RACE_XML_NODE, RACES_XML_NODE)
+        self.__races = GeneratorProvider.__get_generated_items(races_root_node, RACE_XML_NODE, SUB_RACE_XML_NODE)
 
     def __set_classes(self, generator_xml_file_root):
         classes_root_node = generator_xml_file_root.find(CLASSES_XML_NODE)
@@ -35,7 +51,7 @@ class GeneratorProvider:
     @staticmethod
     def __get_generated_items(generated_root_xml_node, type_name, sub_type_name):
         if generated_root_xml_node is None:
-            print("Races node does not exist.")
+            print("Node does not exist.")
             return []
         nodes = generated_root_xml_node.findall(type_name)
         items = []

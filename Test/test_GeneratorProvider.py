@@ -28,3 +28,29 @@ class TestGeneratorProvider(unittest.TestCase):
         classes = generator._GeneratorProvider__classes
         self.assertEqual(classes[0].value, "TestClass")
         self.assertEqual(5, len(classes[0].subtypes), "Number of subraces is wrong")
+
+    def test_generator_random_race(self):
+        races_possibilties = {
+            "FirstRace":["SubRace", "SecondSubRace"],
+            "SecondRace":["SecondSubRace", "Sub"]
+        }
+        generator = GeneratorProvider(".\\TestFiles\\TwoRacesWithSubRaces.xml")
+        race, subrace = generator.get_random_race()
+
+        self.assertIn(race.value, races_possibilties.keys(), "Race is not in expected list")
+
+        sub_races_possibilities = races_possibilties[race.value]
+        self.assertIn(subrace.value, sub_races_possibilities, f"sub-Race is not in expected list of {race}")
+
+    def test_generator_random_class(self):
+        classes_posibilities = {
+            "FirstClass":["clas1", "SecondClass"],
+            "Class2":["TheClasssub", "ti", "last"]
+        }
+        generator = GeneratorProvider(".\\TestFiles\\TwoClasses.xml")
+        genenrated_class, generated_subclass = generator.get_random_class()
+
+        self.assertIn(genenrated_class.value, classes_posibilities.keys(), "Race is not in expected list")
+
+        sub_races_possibilities = classes_posibilities[genenrated_class.value]
+        self.assertIn(generated_subclass.value, sub_races_possibilities, f"sub-Race is not in expected list of {genenrated_class}")
